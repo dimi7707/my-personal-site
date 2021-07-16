@@ -1,5 +1,6 @@
 import React from 'react'
 import { TopNavBar } from './TopNavBar'
+import { Hero } from '../shared/elements/Hero';
 
 import '../../styles/global.scss';
 
@@ -15,6 +16,7 @@ export const MainApp = () => {
   return (
     <>
       <TopNavBar navigationLinks={ navigation }  />
+      <Hero />
     </>
   )
 }
