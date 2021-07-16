@@ -1,0 +1,18 @@
+.animate-card {
+  animation-duration: 3s;
+  animation-name: updown;
+}
+
+@keyframes updown {
+  0% {
+    transform: translateY(-10%);
+  }
+
+  50% {
+    transform: translateY(20%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
+}
