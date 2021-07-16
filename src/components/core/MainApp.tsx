@@ -3,6 +3,7 @@ import { TopNavBar } from './TopNavBar'
 import { Hero } from '../shared/elements/Hero';
 import { FlipCard } from '../shared/elements/FlipCard';
 import { Card } from '../shared/elements/Card';
+import { ProgressBar } from '../shared/elements/ProgressBar';
 
 import '../../styles/global.scss';
 
@@ -19,6 +20,8 @@ export const MainApp = () => {
     <>
       <TopNavBar navigationLinks={navigation} />
       <Hero />
+      {
+        /*
       <Card addAnimation={ false }>
         <div className="px-6 py-4">
           <div className="font-bold text-xl mb-2">Mountain</div>
@@ -45,7 +48,15 @@ export const MainApp = () => {
           <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
         </div>
       </Card>
-      <FlipCard />
+
+      <FlipCard /> */
+      }
+      <div className="m-4">
+        <ProgressBar value={ 50 } />
+      </div>
+      <div className="m-4">
+        <ProgressBar value={ 70 } />
+      </div>
     </>
   )
 };
