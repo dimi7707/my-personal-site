@@ -4,6 +4,7 @@ import { Hero } from '../shared/elements/Hero';
 import { FlipCard } from '../shared/elements/FlipCard';
 import { Card } from '../shared/elements/Card';
 import { ProgressBar } from '../shared/elements/ProgressBar';
+import { Banner } from '../shared/elements/Banner';
 
 import '../../styles/global.scss';
 
@@ -20,6 +21,7 @@ export const MainApp = () => {
     <>
       <TopNavBar navigationLinks={navigation} />
       <Hero />
+      <Banner />
       {
         /*
       <Card addAnimation={ false }>
