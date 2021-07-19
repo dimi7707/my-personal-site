@@ -5,11 +5,13 @@ import { FlipCard } from '../shared/elements/FlipCard';
 import { Card } from '../shared/elements/Card';
 import { ProgressBar } from '../shared/elements/ProgressBar';
 import { Banner } from '../shared/elements/Banner';
-import { Carousel } from '../shared/elements/Carousel';
 import { TheFooter } from './TheFooter';
 import { SkillsBlock } from '../shared/organisms/SkillsBlock';
+import { ExperienceBlock } from '../shared/organisms/ExperienceBlock';
+import { ContactBlock } from '../shared/organisms/ContactBlock';
 
 import '../../styles/global.scss';
+import { ResumeBlock } from '../shared/organisms/ResumeBlock';
 
 export const MainApp = () => {
 
@@ -25,8 +27,10 @@ export const MainApp = () => {
       <TopNavBar navigationLinks={navigation} />
       <Hero />
       <Banner />
+      <ResumeBlock />
       <SkillsBlock />
-      <Carousel />
+      <ExperienceBlock />
+      <ContactBlock />
       <TheFooter />
       {
         /*

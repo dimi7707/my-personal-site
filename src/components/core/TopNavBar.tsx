@@ -13,7 +13,7 @@ export const TopNavBar = ({ navigationLinks }) => {
 
   return (
     <>
-      <Disclosure as="nav" className="bg-gray-800">
+      <Disclosure as="nav" className="bg-indigo-800">
       {({ open }) => (
         <>
           <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
@@ -40,7 +40,7 @@ export const TopNavBar = ({ navigationLinks }) => {
                         key={ `${item.name}-desktop`  }
                         href={item.href}
                         className={classNames(
-                          item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                          item.current ? 'bg-indigo-200 text-black' : 'text-gray-300 hover:bg-indigo-400 hover:text-white',
                           'px-3 py-2 rounded-md text-sm font-medium'
                         )}
                         aria-current={item.current ? 'page' : undefined}
@@ -64,7 +64,7 @@ export const TopNavBar = ({ navigationLinks }) => {
                   key={ `${item.name}-mobile` }
                   href={item.href}
                   className={classNames(
-                    item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                    item.current ? 'bg-indigo-200 text-black' : 'text-gray-300 hover:bg-indigo-400 hover:text-white',
                     'block px-3 py-2 rounded-md text-base font-medium'
                   )}
                   aria-current={item.current ? 'page' : undefined}

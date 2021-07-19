@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+// Main breakpoints
+$mobile-breakpoint: 480px;
+$tablet-breakpoint: 768px;
+$desktop-breakpoint: 992px;
+$large-desktop-breakpoint: 1200px;
+$huge-desktop-breakpoint: 1600px;
+
 // google fonts
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 
@@ -13,3 +20,4 @@
 @import './progressBar.scss';
 @import './hero.scss';
 @import './skillsBlock.scss';
+@import './ResumeBlock.scss';
