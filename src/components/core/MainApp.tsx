@@ -49,14 +49,15 @@ export const MainApp = () => {
         </div>
       </Card>
 
-      <FlipCard /> */
-      }
+      <FlipCard />
       <div className="m-4">
         <ProgressBar value={ 50 } />
       </div>
       <div className="m-4">
         <ProgressBar value={ 70 } />
       </div>
+      */
+      }
     </>
   )
 };

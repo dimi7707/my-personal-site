@@ -2,8 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+// google fonts
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+@import './typography.scss';
 @import './header.scss';
 @import './simpleSwitchButton.scss';
 @import './flipCard.scss';
 @import './card.scss';
 @import './progressBar.scss';
+@import './hero.scss';
