@@ -7,6 +7,7 @@ import { ProgressBar } from '../shared/elements/ProgressBar';
 import { Banner } from '../shared/elements/Banner';
 import { Carousel } from '../shared/elements/Carousel';
 import { TheFooter } from './TheFooter';
+import { SkillsBlock } from '../shared/organisms/SkillsBlock';
 
 import '../../styles/global.scss';
 
@@ -24,6 +25,7 @@ export const MainApp = () => {
       <TopNavBar navigationLinks={navigation} />
       <Hero />
       <Banner />
+      <SkillsBlock />
       <Carousel />
       <TheFooter />
       {
