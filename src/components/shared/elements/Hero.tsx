@@ -18,7 +18,7 @@ export const Hero = () => {
           <img src={ profileImage } className="profile-picture border-8 border-indigo-800" alt="Dimitri Avila" />
         </div>
         <div>
-          <img src={ secondaryImage } className="secondary-image pt-6 h-52 w-auto" alt="Devices" />
+          <img src={ secondaryImage } className="secondary-image pt-6 h-52 w-auto mb-2" alt="Devices" />
         </div>
       </div>
     </div>
