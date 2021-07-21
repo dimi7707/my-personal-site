@@ -2,11 +2,10 @@ import React, { useEffect } from 'react';
 import { useAnimate } from '../../../hooks/useAnimate';
 import redPhone from '../../../images/red-phone.png';
 
-
 export const ContactBlock = () => {
   const animate = {
     classSelector: 'contact-block',
-    animationClass: 'animate-card'
+    animationClass: 'animate__animated animate__fadeInLeft animate-delay-2s'
   };
   useAnimate(animate);
 

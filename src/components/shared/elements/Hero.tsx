@@ -1,12 +1,29 @@
 import React from 'react';
 import profileImage  from '../../../images/profile-image.jpg';
 import secondaryImage from '../../../images/img-secondary-hero.svg';
+import { useAnimate } from '../../../hooks/useAnimate';
 
 export const Hero = () => {
+
+  useAnimate({
+    classSelector: 'main-title',
+    animationClass: 'animate__animated animate__fadeInDown animate-delay-2s'
+  });
+
+  useAnimate({
+    classSelector: 'profile-picture',
+    animationClass: 'animate__animated animate__fadeInTopRight animate-delay-2s'
+  });
+
+  useAnimate({
+    classSelector: 'devices-picture',
+    animationClass: 'animate__animated animate__fadeInUpBig animate-delay-2s'
+  });
+
   return (
     <div className="bg-gray-50 hero">
       <div className="pt-6 flex flex-col items-center">
-        <div className="my-3">
+        <div className="main-title my-3">
           <div className="font-indie text-3xl text-center">
             Hello, I am Dimitri Avila
           </div>
@@ -14,10 +31,10 @@ export const Hero = () => {
             Full stack developer
           </div>
         </div>
-        <div>
+        <div className="profile-picture">
           <img src={ profileImage } className="profile-picture border-8 border-indigo-800" alt="Dimitri Avila" />
         </div>
-        <div>
+        <div className="devices-picture">
           <img src={ secondaryImage } className="secondary-image pt-6 h-52 w-auto mb-2" alt="Devices" />
         </div>
       </div>

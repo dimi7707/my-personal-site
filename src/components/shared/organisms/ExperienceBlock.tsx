@@ -1,14 +1,20 @@
 import React from 'react';
+import { useAnimate } from '../../../hooks/useAnimate';
 import { Card } from '../elements/Card';
 import { FlipCard } from '../elements/FlipCard';
 
 export const ExperienceBlock = () => {
+  useAnimate({
+    classSelector: 'experience-block',
+    animationClass: 'animate__animated animate__fadeInRight animate-delay-2s'
+  });
+
   return (
-    <div className="container mx-auto">
+    <div className="experience-block container mx-auto">
       <h3 className="text-3xl  mt-8 py-4 text-center">Experience</h3>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
         <div className="mx-auto sm:my-12 md:my-0">
-          <Card addAnimation={ true }>
+          <Card>
             <div className="px-6 py-4">
               <div className="font-bold text-xl mb-2">Mountain</div>
               <p className="text-gray-700 text-base">
@@ -23,7 +29,7 @@ export const ExperienceBlock = () => {
           </Card>
         </div>
         <div className="mx-auto sm:my-12 md:my-0">
-          <Card addAnimation={ true }>
+          <Card>
             <div className="px-6 py-4">
               <div className="font-bold text-xl mb-2">Mountain</div>
               <p className="text-gray-700 text-base">
@@ -38,7 +44,7 @@ export const ExperienceBlock = () => {
           </Card>
         </div>
         <div className="mx-auto sm:my-12 md:my-0">
-          <Card addAnimation={ true }>
+          <Card>
             <div className="px-6 py-4">
               <div className="font-bold text-xl mb-2">Mountain</div>
               <p className="text-gray-700 text-base">

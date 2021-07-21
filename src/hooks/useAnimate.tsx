@@ -10,12 +10,12 @@ export const useAnimate = ({ classSelector, animationClass }) => {
   };
 
   const checkPosition = () => {
-    for (var i = 0; i < elements.length; i++) {
-      var element = elements[i];
-      var positionFromTop = elements[i].getBoundingClientRect().top;
+    for (let i = 0; i < elements.length; i++) {
+      let element = elements[i];
+      let positionFromTop = elements[i].getBoundingClientRect().top;
 
       if (positionFromTop - windowHeight <= 0) {
-        element.classList.add(animationClass);
+        element.className += ` ${ animationClass }`;
       }
     }
   };
@@ -25,12 +25,9 @@ export const useAnimate = ({ classSelector, animationClass }) => {
     window.addEventListener('resize', init);
     init();
     checkPosition();
-    //console.log('ejecuto aca');
     return () => {
       window.removeEventListener('scroll', checkPosition);
       window.removeEventListener('resize', init);
     }
   }, []);
-
-  return { success: true };
 }

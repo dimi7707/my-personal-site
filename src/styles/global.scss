@@ -12,6 +12,7 @@ $huge-desktop-breakpoint: 1600px;
 // google fonts
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 
+@import './animate.min.scss';
 @import './typography.scss';
 @import './header.scss';
 @import './simpleSwitchButton.scss';
