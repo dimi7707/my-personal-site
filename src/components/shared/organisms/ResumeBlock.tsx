@@ -3,9 +3,9 @@ import { FlipCard } from '../elements/FlipCard';
 
 export const ResumeBlock = () => {
   return (
-    <div className="container mx-auto h-96">
-      <div className="resume-block grid grid-cols-4 h-96">
-        <div className="col-start-2">
+    <div className="container mx-auto">
+      <div className="resume-block grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4">
+        <div className="xl:col-start-2 h-96 w-96 mx-auto">
           <FlipCard>
             <div className="flip-card-front">
               <div className="max-w-sm rounded overflow-hidden shadow-lg">
@@ -39,7 +39,7 @@ export const ResumeBlock = () => {
             </div>
           </FlipCard>
         </div>
-        <div>
+        <div className="h-96 w-96 sm:mx-auto mx-auto">
           <FlipCard>
             <div className="flip-card-front">
               <div className="max-w-sm rounded overflow-hidden shadow-lg">
