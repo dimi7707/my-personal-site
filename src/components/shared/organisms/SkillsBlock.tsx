@@ -12,7 +12,7 @@ export const SkillsBlock = () => {
   console.log('soy el block de skills');
 
   return (
-    <div className="skills-block container mx-auto skills-block py-10">
+    <div className="skills-block container mx-auto skills-block py-10" id="skills">
       <h3 className="text-3xl my-4 text-center">Skills</h3>
       <div className="grid sm:grid-cols-1 md:grid-cols-2">
         <div className="mx-auto w-4/5">

@@ -10,7 +10,7 @@ export const ContactBlock = () => {
   useAnimate(animate);
 
   return (
-    <div className="contact-block container mx-auto py-10 lg:px-10">
+    <div className="contact-block container mx-auto py-10 lg:px-10" id="contact-me">
       <div className="text-center mx-auto w-20">
         <img src={ redPhone } alt="Phone" className="mx-auto" />
       </div>

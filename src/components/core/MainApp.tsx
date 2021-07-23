@@ -9,17 +9,17 @@ import { TheFooter } from './TheFooter';
 import { SkillsBlock } from '../shared/organisms/SkillsBlock';
 import { ExperienceBlock } from '../shared/organisms/ExperienceBlock';
 import { ContactBlock } from '../shared/organisms/ContactBlock';
-
-import '../../styles/global.scss';
 import { ResumeBlock } from '../shared/organisms/ResumeBlock';
+
+import '../../styles/main.scss';
 
 export const MainApp = () => {
 
   const navigation = [
     { name: 'Personal info', href: '#', current: true },
-    { name: 'Skills', href: '#', current: false },
-    { name: 'Projects', href: '#', current: false },
-    { name: 'Contact me', href: '#', current: false },
+    { name: 'Skills', href: '#skills', current: false },
+    { name: 'Experience', href: '#experience', current: false },
+    { name: 'Contact me', href: '#contact-me', current: false },
   ];
 
   return (

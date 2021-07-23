@@ -10,7 +10,7 @@ export const ExperienceBlock = () => {
   });
 
   return (
-    <div className="experience-block container mx-auto">
+    <div className="experience-block container mx-auto" id="experience">
       <h3 className="text-3xl  mt-8 py-4 text-center">Experience</h3>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
         <div className="mx-auto sm:my-12 md:my-0">
