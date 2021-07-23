@@ -14,7 +14,7 @@ export const useAnimate = ({ classSelector, animationClass }) => {
       let element = elements[i];
       let positionFromTop = elements[i].getBoundingClientRect().top;
 
-      if (positionFromTop - windowHeight <= 0) {
+      if (positionFromTop - windowHeight <= 0 && !element.className.includes(animationClass)) {
         element.className += ` ${ animationClass }`;
       }
     }
