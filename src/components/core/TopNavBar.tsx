@@ -1,9 +1,7 @@
-import * as React from "react";
-import PropTypes from 'prop-types';
+import React, { useEffect } from 'react';
 import { Disclosure } from '@headlessui/react';
 import { MenuIcon, XIcon } from '@heroicons/react/outline';
 import { SimpleSwitchButton } from "../shared/atoms/SimpleSwitchButton";
-import { NavLink } from '../../types/navLink';
 
 export const TopNavBar = ({ navigationLinks }) => {
 
@@ -11,16 +9,26 @@ export const TopNavBar = ({ navigationLinks }) => {
     return classes.filter(Boolean).join(' ')
   };
 
+  useEffect(() => {
+    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.classList.add('dark')
+    } else {
+      document.documentElement.classList.remove('dark')
+    }
+  }, [])
+
   return (
     <>
-      <Disclosure as="nav" className="bg-indigo-800">
+      <Disclosure as="nav" className="bg-indigo-800 dark:bg-gray-900">
       {({ open }) => (
         <>
           <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
             <div className="relative flex items-center justify-between h-16">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
-                <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                <Disclosure.Button
+                  className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                >
                   <span className="sr-only">Open main menu</span>
                   {open ? (
                     <XIcon className="block h-6 w-6" aria-hidden="true" />
@@ -40,7 +48,7 @@ export const TopNavBar = ({ navigationLinks }) => {
                         key={ `${item.name}-desktop`  }
                         href={item.href}
                         className={classNames(
-                          item.current ? 'bg-indigo-200 text-black' : 'text-gray-300 hover:bg-indigo-400 hover:text-white',
+                          item.current ? 'bg-indigo-200 text-black' : 'text-gray-300 hover:bg-indigo-400 hover:text-white dark:text-white',
                           'px-3 py-2 rounded-md text-sm font-medium'
                         )}
                         aria-current={item.current ? 'page' : undefined}
@@ -64,7 +72,7 @@ export const TopNavBar = ({ navigationLinks }) => {
                   key={ `${item.name}-mobile` }
                   href={item.href}
                   className={classNames(
-                    item.current ? 'bg-indigo-200 text-black' : 'text-gray-300 hover:bg-indigo-400 hover:text-white',
+                    item.current ? 'bg-indigo-200 text-black' : 'text-gray-300 hover:bg-indigo-400 hover:text-white dark:text-white',
                     'block px-3 py-2 rounded-md text-base font-medium'
                   )}
                   aria-current={item.current ? 'page' : undefined}

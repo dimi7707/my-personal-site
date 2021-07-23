@@ -9,8 +9,6 @@ export const SkillsBlock = () => {
     animationClass: 'animate__animated animate__fadeInTopRight animate-delay-2s'
   });
 
-  console.log('soy el block de skills');
-
   return (
     <div className="skills-block container mx-auto skills-block py-10" id="skills">
       <h3 className="text-3xl my-4 text-center">Skills</h3>

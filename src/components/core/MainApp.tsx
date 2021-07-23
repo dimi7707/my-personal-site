@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { TopNavBar } from './TopNavBar'
 import { Hero } from '../shared/elements/Hero';
 import { FlipCard } from '../shared/elements/FlipCard';
@@ -24,14 +24,19 @@ export const MainApp = () => {
 
   return (
     <>
+      <div>
+
       <TopNavBar navigationLinks={navigation} />
       <Hero />
       <Banner />
-      <ResumeBlock />
+
+        <ResumeBlock />
+
       <SkillsBlock />
       <ExperienceBlock />
       <ContactBlock />
       <TheFooter />
+      </div>
       {
         /*
       <Card addAnimation={ false }>

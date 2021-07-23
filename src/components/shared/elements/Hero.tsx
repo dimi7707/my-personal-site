@@ -21,7 +21,7 @@ export const Hero = () => {
   });
 
   return (
-    <div className="bg-gray-50 hero">
+    <div className="bg-gray-50 hero dark:bg-gray-800 dark:text-white ">
       <div className="pt-6 flex flex-col items-center">
         <div className="main-title my-3">
           <div className="font-indie text-3xl text-center">
