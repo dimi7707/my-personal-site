@@ -48,7 +48,7 @@ export const TopNavBar = ({ navigationLinks }) => {
                         key={ `${item.name}-desktop`  }
                         href={item.href}
                         className={classNames(
-                          item.current ? 'bg-indigo-200 text-black' : 'text-gray-300 hover:bg-indigo-400 hover:text-white dark:text-white',
+                          item.current ? 'dark:bg-yellow-300  bg-indigo-200 text-black' : 'text-gray-300 dark:hover:bg-yellow-300 dark:hover:text-black hover:bg-indigo-200 hover:text-black dark:text-white',
                           'px-3 py-2 rounded-md text-sm font-medium'
                         )}
                         aria-current={item.current ? 'page' : undefined}
@@ -72,7 +72,7 @@ export const TopNavBar = ({ navigationLinks }) => {
                   key={ `${item.name}-mobile` }
                   href={item.href}
                   className={classNames(
-                    item.current ? 'bg-indigo-200 text-black' : 'text-gray-300 hover:bg-indigo-400 hover:text-white dark:text-white',
+                    item.current ? 'bg-indigo-200 text-black' : 'text-gray-300 dark:hover:bg-yellow-400 hover:bg-indigo-400 hover:text-white dark:text-white',
                     'block px-3 py-2 rounded-md text-base font-medium'
                   )}
                   aria-current={item.current ? 'page' : undefined}
