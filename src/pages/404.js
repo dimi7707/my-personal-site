@@ -3,8 +3,6 @@ import mainImage from '../images/image-404.jpg';
 
 const NotFoundPage = () => {
 
-  console.log(mainImage);
-
   return (
     <div className="container mx-auto">
       <img src={mainImage} alt="404" />
