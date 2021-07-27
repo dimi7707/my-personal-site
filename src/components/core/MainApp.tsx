@@ -29,9 +29,7 @@ export const MainApp = () => {
       <TopNavBar navigationLinks={navigation} />
       <Hero />
       <Banner />
-
-        <ResumeBlock />
-
+      <ResumeBlock />
       <SkillsBlock />
       <ExperienceBlock />
       <ContactBlock />

@@ -1,7 +1,5 @@
 import React from 'react';
 
-import testImage from '../../../images/js-logo.png';
-
 export const FlipCard = ({ children }) => {
   return (
     <>

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { useAnimate } from '../../../hooks/useAnimate';
 import redPhone from '../../../images/red-phone.png';
 
@@ -10,15 +10,17 @@ export const ContactBlock = () => {
   useAnimate(animate);
 
   return (
-    <div className="contact-block container mx-auto py-10 lg:px-10" id="contact-me">
-      <div className="text-center mx-auto w-20">
-        <img src={ redPhone } alt="Phone" className="mx-auto" />
-      </div>
-      <div className="text-xl text-center lg:px-60 py-4">
-        <h3 className="text-3xl py-4"> Contact me </h3>
-        <p>
-          If you want to talk about a job, project or just want to make a comment, share an idea. You can write to me through these means:
-        </p>
+    <div className="dark:bg-gray-800 dark:text-white">
+      <div className="contact-block container mx-auto py-20 lg:px-10" id="contact-me">
+        <div className="text-center mx-auto w-20">
+          <img src={ redPhone } alt="Phone" className="mx-auto" />
+        </div>
+        <div className="text-xl text-center lg:px-60 py-4">
+          <h3 className="text-3xl py-4"> Contact me </h3>
+          <p>
+            If you want to talk about a job, project or just want to make a comment, share an idea. You can write to me through these means:
+          </p>
+        </div>
       </div>
     </div>
   )

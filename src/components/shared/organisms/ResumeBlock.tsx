@@ -3,13 +3,13 @@ import { FlipCard } from '../elements/FlipCard';
 
 export const ResumeBlock = () => {
   return (
-    <div className="dark:bg-gray-700 dark:text-white">
+    <div className="dark:bg-gray-800 dark:text-white">
       <div className="container mx-auto">
         <div className="resume-block grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4">
           <div className="xl:col-start-2 h-96 w-96 mx-auto">
             <FlipCard>
               <div className="flip-card-front">
-                <div className="max-w-sm rounded overflow-hidden shadow-lg">
+                <div className="max-w-sm rounded overflow-hidden shadow-lg dark:bg-gray-600">
                   <div className="px-6 py-4">
                     <div className="font-bold text-xl mb-2 dark:text-white">Mountain</div>
                     <p className="text-gray-700 text-base dark:text-white">
@@ -23,11 +23,11 @@ export const ResumeBlock = () => {
                   </div>
                 </div>
               </div>
-              <div className="flip-card-back">
-                <div className="max-w-sm rounded overflow-hidden shadow-lg">
+              <div className="flip-card-back dark:text-white">
+                <div className="max-w-sm rounded overflow-hidden shadow-lg dark:bg-gray-600">
                   <div className="px-6 py-4">
                     <div className="font-bold text-xl mb-2">Mountain</div>
-                    <p className="text-gray-700 text-base">
+                    <p className="dark:text-white text-gray-700 text-base">
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
                     </p>
                   </div>
@@ -43,10 +43,10 @@ export const ResumeBlock = () => {
           <div className="h-96 w-96 sm:mx-auto mx-auto">
             <FlipCard>
               <div className="flip-card-front">
-                <div className="max-w-sm rounded overflow-hidden shadow-lg">
+                <div className="max-w-sm rounded overflow-hidden shadow-lg dark:bg-gray-600">
                   <div className="px-6 py-4">
-                    <div className="font-bold text-xl mb-2">Mountain</div>
-                    <p className="text-gray-700 text-base">
+                    <div className="dark:text-white font-bold text-xl mb-2">Mountain</div>
+                    <p className="dark:text-white text-gray-700 text-base">
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
                     </p>
                   </div>
@@ -57,11 +57,11 @@ export const ResumeBlock = () => {
                   </div>
                 </div>
               </div>
-              <div className="flip-card-back">
-                <div className="max-w-sm rounded overflow-hidden shadow-lg">
+              <div className="flip-card-back dark:text-white">
+                <div className="max-w-sm rounded overflow-hidden shadow-lg dark:bg-gray-600">
                   <div className="px-6 py-4">
                     <div className="font-bold text-xl mb-2">Mountain</div>
-                    <p className="text-gray-700 text-base">
+                    <p className="dark:text-white text-gray-700 text-base">
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
                     </p>
                   </div>

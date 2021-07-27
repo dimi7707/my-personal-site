@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 export const Card = ({ children, addAnimation = false }) => {
 
-  const baseClass = 'max-w-sm rounded overflow-hidden shadow-lg';
+  const baseClass = 'max-w-sm rounded overflow-hidden shadow-lg dark:bg-gray-600 dark:text-white';
 
   return (
     <>

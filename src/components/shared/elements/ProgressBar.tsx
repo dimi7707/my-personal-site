@@ -19,8 +19,11 @@ export const ProgressBar = ({ value }) => {
   return (
     <>
       <div className="h-3 relative max-w-xl rounded-full overflow-hidden animate-progress-bar">
-        <div className="w-full h-full bg-gray-200 absolute"></div>
-        <div style={{ width: `${ progressive }%` }} className="bar h-full bg-indigo-600 relative rounded-full"></div>
+        <div className="w-full h-full dark:bg-white bg-gray-200 absolute"></div>
+        <div
+          style={{ width: `${ progressive }%` }}
+          className="bar h-full bg-indigo-600 dark:bg-indigo-300 relative rounded-full"
+        />
       </div>
     </>
   )
