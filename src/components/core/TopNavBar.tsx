@@ -19,7 +19,7 @@ export const TopNavBar = ({ navigationLinks }) => {
 
   return (
     <>
-      <Disclosure as="nav" className="bg-indigo-800 dark:bg-gray-900">
+      <Disclosure as="nav" className="top-nav-bar bg-indigo-800 dark:bg-gray-900 lg:fixed lg:z-50 lg:w-full lg:top-0 lg:h-16">
       {({ open }) => (
         <>
           <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
@@ -72,7 +72,7 @@ export const TopNavBar = ({ navigationLinks }) => {
                   key={ `${item.name}-mobile` }
                   href={item.href}
                   className={classNames(
-                    item.current ? 'bg-indigo-200 text-black' : 'text-gray-300 dark:hover:bg-yellow-400 hover:bg-indigo-400 hover:text-white dark:text-white',
+                    item.current ? 'dark:bg-yellow-300 bg-indigo-200 text-black' : 'text-gray-300 dark:hover:bg-yellow-300 hover:bg-indigo-400 hover:text-white dark:text-white',
                     'block px-3 py-2 rounded-md text-base font-medium'
                   )}
                   aria-current={item.current ? 'page' : undefined}
