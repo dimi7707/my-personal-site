@@ -16,38 +16,38 @@ export const SkillsBlock = () => {
         <div className="grid sm:grid-cols-1 md:grid-cols-2">
           <div className="mx-auto w-4/5">
             <div className="skill">
-              <p>PHP</p>
+              <p>JavaScript</p>
                 <ProgressBar value={ 85 } />
             </div>
             <div className="skill">
-              <p>Javascript</p>
-                <ProgressBar value={ 85 } />
+              <p>HTML, CSS, SASS</p>
+                <ProgressBar value={ 90 } />
             </div>
             <div className="skill">
-              <p>React</p>
-                <ProgressBar value={ 75 } />
+              <p>Vue.js, React</p>
+                <ProgressBar value={ 82 } />
             </div>
             <div className="skill">
-              <p>Vue</p>
-                <ProgressBar value={ 85 } />
+              <p>Angular</p>
+                <ProgressBar value={ 60 } />
             </div>
           </div>
           <div className="mx-auto w-4/5">
             <div className="skill">
               <p>PHP</p>
-                <ProgressBar value={ 85 } />
+                <ProgressBar value={ 87 } />
             </div>
             <div className="skill">
-              <p>Javascript</p>
-                <ProgressBar value={ 85 } />
+              <p>Node.js</p>
+                <ProgressBar value={ 83 } />
             </div>
             <div className="skill">
-              <p>React</p>
-                <ProgressBar value={ 75 } />
+              <p>Typescript</p>
+                <ProgressBar value={ 70 } />
             </div>
             <div className="skill">
-              <p>Vue</p>
-                <ProgressBar value={ 85 } />
+              <p>Git, SQL, Graphql</p>
+                <ProgressBar value={ 65 } />
             </div>
           </div>
         </div>
