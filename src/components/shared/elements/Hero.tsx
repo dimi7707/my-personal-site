@@ -1,7 +1,7 @@
 import React from 'react';
-import profileImage  from '../../../images/profile-image.jpg';
-import secondaryImage from '../../../images/img-secondary-hero.svg';
 import { useAnimate } from '../../../hooks/useAnimate';
+import profileImage  from '../../../images/profile-image.png';
+import secondaryImage from '../../../images/img-secondary-hero.png';
 
 export const Hero = () => {
 

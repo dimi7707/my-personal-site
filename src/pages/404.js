@@ -1,5 +1,5 @@
 import * as React from "react";
-import mainImage from '../images/image-404.jpg';
+import mainImage from '../images/image-404.png';
 
 const NotFoundPage = () => {
 
