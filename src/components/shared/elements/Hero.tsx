@@ -32,10 +32,10 @@ export const Hero = () => {
           </div>
         </div>
         <div className="profile-picture">
-          <img src={ profileImage } className="profile-picture border-8 border-indigo-800" alt="Dimitri Avila" />
+          <img src={ profileImage } alt="Dimitri Avila" className="profile-picture border-8 border-indigo-800" />
         </div>
         <div className="devices-picture">
-          <img src={ secondaryImage } className="secondary-image pt-6 h-52 w-auto mb-2" alt="Devices" />
+          <img src={ secondaryImage } alt="Devices" className="secondary-image pt-6 h-52 w-auto mb-2" />
         </div>
       </div>
     </div>
