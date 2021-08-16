@@ -8,8 +8,9 @@ import { Banner } from '../shared/elements/Banner';
 import { TheFooter } from './TheFooter';
 import { SkillsBlock } from '../shared/organisms/SkillsBlock';
 import { ExperienceBlock } from '../shared/organisms/ExperienceBlock';
-import { ContactBlock } from '../shared/organisms/ContactBlock';
+import { RepoBlock } from '../shared/organisms/RepoBlock';
 import { ResumeBlock } from '../shared/organisms/ResumeBlock';
+import { ContactBlock } from '../shared/organisms/ContactBlock';
 
 import '../../styles/main.scss';
 
@@ -30,6 +31,7 @@ export const MainApp = () => {
       <ResumeBlock />
       <SkillsBlock />
       <ExperienceBlock />
+      <RepoBlock />
       <ContactBlock />
       <TheFooter />
     </>
