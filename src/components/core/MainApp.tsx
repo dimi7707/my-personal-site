@@ -17,9 +17,10 @@ import '../../styles/main.scss';
 export const MainApp = () => {
 
   const navigation = [
-    { name: 'Personal info', href: '#', current: true },
+    { name: 'Start', href: '#', current: true },
     { name: 'Skills', href: '#skills', current: false },
     { name: 'Experience', href: '#experience', current: false },
+    { name: 'Repositories', href: '#repositories', current: false },
     { name: 'Contact me', href: '#contact-me', current: false },
   ];
 

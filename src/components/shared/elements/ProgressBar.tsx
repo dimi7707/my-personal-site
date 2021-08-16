@@ -22,7 +22,7 @@ export const ProgressBar = ({ value }) => {
         <div className="w-full h-full dark:bg-white bg-gray-200 absolute"></div>
         <div
           style={{ width: `${ progressive }%` }}
-          className="bar h-full bg-indigo-600 dark:bg-indigo-300 relative rounded-full"
+          className="bar h-full bg-indigo-600 dark:bg-yellow-300 relative rounded-full"
         />
       </div>
     </>

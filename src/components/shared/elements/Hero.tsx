@@ -22,7 +22,7 @@ export const Hero = () => {
 
   return (
     <div className="bg-gray-50 hero dark:bg-gray-800 dark:text-white lg:mt-16">
-      <div className="pt-6 flex flex-col items-center">
+      <div className="py-8 flex flex-col items-center">
         <div className="main-title my-3">
           <div className="font-indie text-3xl text-center">
             Hello, I am Dimitri Avila
@@ -32,10 +32,7 @@ export const Hero = () => {
           </div>
         </div>
         <div className="profile-picture">
-          <img src={ profileImage } alt="Dimitri Avila" className="profile-picture border-8 border-indigo-800" />
-        </div>
-        <div className="devices-picture">
-          <img src={ secondaryImage } alt="Devices" className="secondary-image pt-6 h-52 w-auto mb-2" />
+          <img src={ profileImage } alt="Dimitri Avila" className="profile-picture border-8 border-indigo-800 dark:border-yellow-300" />
         </div>
       </div>
     </div>

@@ -8,7 +8,7 @@ export const Banner = () => {
   });
 
   return (
-    <div className="bg-indigo-800 text-white grid grid-cols-8 gap-4 py-20">
+    <div className="bg-indigo-800 dark:bg-yellow-300 dark:text-black text-white grid grid-cols-8 gap-4 py-20">
       <div className="col-start-3 col-span-4">
         <p className="banner-text text-center text-xl">
           I am 31 years old, I am Venezuelan, I have lived since

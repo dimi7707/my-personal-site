@@ -11,7 +11,7 @@ export const ContactBlock = () => {
 
   return (
     <div className="dark:bg-gray-800 dark:text-white">
-      <div className="contact-block container mx-auto py-20 lg:px-10" id="contact-me">
+      <div className="contact-block container mx-auto py-14 lg:px-10" id="contact-me">
         <div className="text-center mx-auto w-20">
           <img src={ redPhone } alt="Phone" className="mx-auto" />
         </div>
