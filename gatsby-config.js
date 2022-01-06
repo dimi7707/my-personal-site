@@ -13,6 +13,14 @@ module.exports = {
         allExtensions: true, // defaults to false
       },
     },
+    {
+      resolve: 'gatsby-source-graphql',
+      options: {
+        typeName: 'GRAPHCMS',
+        fieldName: 'graphCmsData',
+        url: 'https://api-sa-east-1.graphcms.com/v2/ckxgd7o6m0c6b01xp6yss8keo/master',
+      }
+    },
     'gatsby-plugin-postcss',
     'gatsby-plugin-image',
     'gatsby-plugin-sharp',
