@@ -19,12 +19,22 @@ export const MainApp = ({ containerData }) => {
   console.log('mi container data es', containerData);
 
   const navigation = navigationSerializer(containerData.mainMenus[0]);
+  const {
+    title:heroTitle,
+    subtitle:heroSubtitle,
+    avatar:heroImage,
+    shortPresentation:textBody
+  } = containerData.presentations[0];
 
   return (
     <>
-      <TopNavBar navigationLinks={navigation} />
-      <Hero />
-      <Banner />
+      <TopNavBar navigationLinks={ navigation } />
+      <Hero
+        title={ heroTitle }
+        subtitle={ heroSubtitle }
+        image={ heroImage.url }
+      />
+      <Banner textBody={ textBody } />
       <ResumeBlock />
       <SkillsBlock />
       <ExperienceBlock />

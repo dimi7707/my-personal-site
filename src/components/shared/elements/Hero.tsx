@@ -1,9 +1,10 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { useAnimate } from '../../../hooks/useAnimate';
-import profileImage  from '../../../images/profile-image.png';
-import secondaryImage from '../../../images/img-secondary-hero.png';
 
-export const Hero = () => {
+export const Hero = ({ title, subtitle, image }) => {
+
+  console.log('la imagen es', image)
 
   useAnimate({
     classSelector: 'main-title',
@@ -25,16 +26,22 @@ export const Hero = () => {
       <div className="py-8 flex flex-col items-center">
         <div className="main-title my-3">
           <div className="font-indie text-3xl text-center">
-            Hello, I am Dimitri Avila
+            { title }
           </div>
           <div className="font-indie text-2xl text-center">
-            Full stack developer
+            { subtitle }
           </div>
         </div>
         <div className="profile-picture">
-          <img src={ profileImage } alt="Dimitri Avila" className="profile-picture border-8 border-indigo-800 dark:border-yellow-300" />
+          <img src={ image } alt={ title } className="profile-picture border-8 border-indigo-800 dark:border-yellow-300" />
         </div>
       </div>
     </div>
   )
+};
+
+Hero.propTypes = {
+  title: PropTypes.string.isRequired,
+  subtitle: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired
 };
