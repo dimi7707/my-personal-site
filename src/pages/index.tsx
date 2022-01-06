@@ -1,7 +1,6 @@
 import * as React from "react";
 import { graphql, Link } from 'gatsby';
 import { MainApp } from '../components/core/MainApp';
-import { setTimeout } from "timers";
 
 const IndexPage = ({ data }) => {
 
@@ -13,7 +12,7 @@ const IndexPage = ({ data }) => {
       {
         console.log('aca en el render el contenido de data es', data)
       }
-      <MainApp />
+      <MainApp containerData={  data.graphCmsData }  />
     </main>
   )
 };

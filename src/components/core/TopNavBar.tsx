@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import PropTypes from 'prop-types';
 import { Disclosure } from '@headlessui/react';
 import { MenuIcon, XIcon } from '@heroicons/react/outline';
 import { SimpleSwitchButton } from "../shared/atoms/SimpleSwitchButton";
@@ -86,5 +87,15 @@ export const TopNavBar = ({ navigationLinks }) => {
       )}
     </Disclosure>
     </>
+  )
+};
+
+TopNavBar.Proptypes = {
+  navigationLinks: PropTypes.arrayOf(
+    PropTypes.shape({
+      name: PropTypes.string.isRequired,
+      href: PropTypes.string.isRequired,
+      current: PropTypes.bool.isRequired
+    })
   )
 };
