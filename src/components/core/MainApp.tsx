@@ -35,7 +35,7 @@ export const MainApp = ({ containerData }) => {
         image={ heroImage.url }
       />
       <Banner textBody={ textBody } />
-      <ResumeBlock />
+      <ResumeBlock  knowledgeAreas={ containerData.knowledgeAreas } />
       <SkillsBlock />
       <ExperienceBlock />
       <RepoBlock />
