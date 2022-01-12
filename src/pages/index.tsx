@@ -60,6 +60,7 @@ query {
       linkRepo
       image {
         id
+        url
       }
     }
     contactSections {

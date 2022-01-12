@@ -28,6 +28,7 @@ export const MainApp = ({ containerData }) => {
   } = containerData.presentations[0];
   const skills = containerData.skills;
   const experience =  workExperiencesSerializer(containerData.workExperiences);
+  const repositories = containerData.repositories;
 
   return (
     <>
@@ -41,7 +42,7 @@ export const MainApp = ({ containerData }) => {
       <ResumeBlock  knowledgeAreas={ containerData.knowledgeAreas } />
       <SkillsBlock list={ skills } />
       <ExperienceBlock experienceData={ experience }  />
-      <RepoBlock />
+      <RepoBlock reposList={ repositories } />
       <ContactBlock />
       <TheFooter />
     </>
