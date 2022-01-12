@@ -23,7 +23,10 @@ export const ResumeBlock = ({ knowledgeAreas }) => {
         <div className="resume-block grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4">
           {
             primitiveCardList.map((card, index) => (
-              <div className="xl:col-start-2 h-96 w-96 mx-auto" key={ `card-${ index }` } >
+              <div
+                className={ `${ index === 0 ? `xl:col-start-2` : `` } h-96 w-96 mx-auto `}
+                key={ `card-${ index }` }
+              >
                 <FlipCard>
                   <div className="flip-card-front text-black dark:text-white border-indigo-800 dark:border-yellow-300 border-4">
                     { card }

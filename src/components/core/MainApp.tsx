@@ -25,6 +25,7 @@ export const MainApp = ({ containerData }) => {
     avatar:heroImage,
     shortPresentation:textBody
   } = containerData.presentations[0];
+  const skills = containerData.skills;
 
   return (
     <>
@@ -36,7 +37,7 @@ export const MainApp = ({ containerData }) => {
       />
       <Banner textBody={ textBody } />
       <ResumeBlock  knowledgeAreas={ containerData.knowledgeAreas } />
-      <SkillsBlock />
+      <SkillsBlock list={ skills } />
       <ExperienceBlock />
       <RepoBlock />
       <ContactBlock />
