@@ -11,6 +11,7 @@ import { ResumeBlock } from '../shared/organisms/ResumeBlock';
 import { ContactBlock } from '../shared/organisms/ContactBlock';
 
 import navigationSerializer from '../../serializers/navigationSerializer';
+import workExperiencesSerializer from '../../serializers/workExperiencesSerializer';
 
 import '../../styles/main.scss';
 
@@ -26,6 +27,7 @@ export const MainApp = ({ containerData }) => {
     shortPresentation:textBody
   } = containerData.presentations[0];
   const skills = containerData.skills;
+  const experience =  workExperiencesSerializer(containerData.workExperiences);
 
   return (
     <>
@@ -38,7 +40,7 @@ export const MainApp = ({ containerData }) => {
       <Banner textBody={ textBody } />
       <ResumeBlock  knowledgeAreas={ containerData.knowledgeAreas } />
       <SkillsBlock list={ skills } />
-      <ExperienceBlock />
+      <ExperienceBlock experienceData={ experience }  />
       <RepoBlock />
       <ContactBlock />
       <TheFooter />
