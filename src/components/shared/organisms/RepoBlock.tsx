@@ -1,8 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useAnimate } from '../../../hooks/useAnimate';
-import gitHubLogo from '../../../images/github-logo.png';
-import gitLabLogo from '../../../images/gitlab-logo.png';
 
 export const RepoBlock = ({ reposList }) => {
   useAnimate({

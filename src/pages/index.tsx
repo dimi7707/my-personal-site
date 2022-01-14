@@ -64,9 +64,12 @@ query {
       }
     }
     contactSections {
-      ttitle
+      title
       description
       contactAddressList
+      contactLogo {
+        url
+      }
     }
     footers {
       primaryText

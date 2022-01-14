@@ -17,8 +17,6 @@ import '../../styles/main.scss';
 
 export const MainApp = ({ containerData }) => {
 
-  console.log('mi container data es', containerData);
-
   const navigation = navigationSerializer(containerData.mainMenus[0]);
   const {
     title:heroTitle,
@@ -26,9 +24,7 @@ export const MainApp = ({ containerData }) => {
     avatar:heroImage,
     shortPresentation:textBody
   } = containerData.presentations[0];
-  const skills = containerData.skills;
   const experience =  workExperiencesSerializer(containerData.workExperiences);
-  const repositories = containerData.repositories;
 
   return (
     <>
@@ -40,11 +36,11 @@ export const MainApp = ({ containerData }) => {
       />
       <Banner textBody={ textBody } />
       <ResumeBlock  knowledgeAreas={ containerData.knowledgeAreas } />
-      <SkillsBlock list={ skills } />
+      <SkillsBlock list={ containerData.skills } />
       <ExperienceBlock experienceData={ experience }  />
-      <RepoBlock reposList={ repositories } />
-      <ContactBlock />
-      <TheFooter />
+      <RepoBlock reposList={ containerData.repositories } />
+      <ContactBlock contactData={ containerData.contactSections[0] }  />
+      <TheFooter content={ containerData.footers[0] } />
     </>
   )
 };
