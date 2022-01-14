@@ -4,8 +4,6 @@ import { useAnimate } from '../../../hooks/useAnimate';
 
 export const Hero = ({ title, subtitle, image }) => {
 
-  console.log('la imagen es', image)
-
   useAnimate({
     classSelector: 'main-title',
     animationClass: 'animate__animated animate__fadeInDown animate-delay-2s'

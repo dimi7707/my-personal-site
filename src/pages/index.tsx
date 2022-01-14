@@ -4,14 +4,8 @@ import { MainApp } from '../components/core/MainApp';
 
 const IndexPage = ({ data }) => {
 
-  console.log('toy aca en el index...');
-  console.log('el contenido de data es', data);
-
   return (
     <main>
-      {
-        console.log('aca en el render el contenido de data es', data)
-      }
       <MainApp containerData={  data.graphCmsData }  />
     </main>
   )
