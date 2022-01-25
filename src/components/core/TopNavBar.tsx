@@ -10,14 +10,6 @@ export const TopNavBar = ({ navigationLinks }) => {
     return classes.filter(Boolean).join(' ')
   };
 
-  useEffect(() => {
-    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-      document.documentElement.classList.add('dark')
-    } else {
-      document.documentElement.classList.remove('dark')
-    }
-  }, [])
-
   return (
     <>
       <Disclosure as="nav" className="top-nav-bar bg-indigo-800 dark:bg-gray-900 lg:fixed lg:z-50 lg:w-full lg:top-0 lg:h-16">

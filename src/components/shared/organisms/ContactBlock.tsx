@@ -17,7 +17,7 @@ export const ContactBlock = ({ contactData }) => {
         <div className="text-center mx-auto w-20">
           <img src={ contactLogo.url } alt={ title } className="mx-auto" />
         </div>
-        <div className="text-xl text-center lg:px-60 py-4">
+        <div className="text-xl text-center mx-8 lg:px-60 py-4">
           <h3 className="text-3xl py-4">{ title }</h3>
           <p>{ description }</p>
           <ul>
