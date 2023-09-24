@@ -9,9 +9,9 @@ export const Banner = ({ textBody }) => {
   });
 
   return (
-    <div className="bg-indigo-800 dark:bg-yellow-300 dark:text-black text-white grid grid-cols-8 gap-4 py-20">
+    <div className="bg-indigo-800 dark:bg-yellow-300 dark:text-black text-white grid md:grid-cols-8 gap-4 py-20">
       <div className="col-start-3 col-span-4">
-        <p className="banner-text text-center text-xl">
+        <p className="banner-text md:text-center text-xl">
           { textBody }
         </p>
       </div>
